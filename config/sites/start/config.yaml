@@ -1,0 +1,33 @@
+base: 'https://typo3-project.ddev.site/start'
+dependencies:
+  - test/my-site-package
+errorHandling:
+  -
+    errorCode: 404
+    errorHandler: Fluid
+    errorFluidTemplate: 'EXT:my_site_package/Resources/Private/Templates/Error/404.html'
+languages:
+  -
+    title: English
+    enabled: true
+    locale: en_US.UTF-8
+    hreflang: ''
+    base: /
+    websiteTitle: ''
+    navigationTitle: English
+    flag: us
+    languageId: 0
+  -
+    title: German
+    enabled: true
+    locale: de_DE.utf8
+    hreflang: ''
+    base: /de/
+    websiteTitle: ''
+    navigationTitle: ''
+    fallbackType: strict
+    fallbacks: '0'
+    flag: de
+    languageId: 1
+rootPageId: 2
+websiteTitle: ''
